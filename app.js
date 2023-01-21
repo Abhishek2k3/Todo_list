@@ -15,7 +15,7 @@ const generateTemplate = todo => {
 const filterTodos = term => {
 
   // add filtered class
-  Array.from(list.children)
+  Array.from(list.children) // converting to array and performing functions
     .filter(todo => !todo.textContent.toLowerCase().includes(term))
     .forEach(todo => todo.classList.add('filtered'));
 
